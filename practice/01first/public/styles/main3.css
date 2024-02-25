@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(35, 34, 34); */
+    /* color: white; */
+}
+.container{
+    padding: 22px;
+    position: absolute;
+    left: 482px;
+    top: 122px;
+    /* height: 400px; */
+    width: 400px;
+    background-color: burlywood;
+}
+.section{
+    padding-top: 22px;
+}
+.article{
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}

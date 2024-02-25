@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs tags</title>
+</head>
+<body>
+    <!-- ejs tag -->
+    <h1><%= title %></h1>
+    <!-- current seconds -->
+    <p>current seconds:<%= seconds %></p>
+    <% if(seconds % 2 === 0){ %>
+        <ul>
+           <% items.forEach((item) => { %>
+                <li><%= item %></li>
+          <% }) %>
+        </ul>
+   <% } else { %>
+    <p>No items to be shown</p>
+   <% } %>
+    <!-- html content -->
+    <p><%- htmlContent %></p>
+
+    <!-- footer content==> insert another ejs file -->
+    <%- include("footer.ejs") %>
+</body>
+</html>

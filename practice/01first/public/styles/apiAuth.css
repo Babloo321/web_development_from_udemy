@@ -1,0 +1,65 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f3cccc;
+
+}
+.container{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#noAuth, #basicAuth, #apiKeyAuth, #tokenAuth{
+    padding: 4px;
+    height: 46px;
+    width: 122px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+#noAuth:hover, #basicAuth:hover, #apiKeyAuth:hover, #tokenAuth:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 4px red;
+    height: 56px;
+    width: 142px;
+    color: black;
+    font-size: 20px;
+    padding: 6px;
+
+}
+#noAuth{
+    background-color: blue;
+}
+#basicAuth{
+    background-color: skyblue;
+}
+#apiKeyAuth{
+    background-color: orange;
+}
+#tokenAuth{
+    background-color: red;
+}
+.response-area{
+    color: rgb(38, 7, 238);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 50px;
+}

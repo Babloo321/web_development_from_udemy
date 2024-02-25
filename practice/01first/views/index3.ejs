@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's find something for you to do</h1>
+
+        <form action="/" id="form" class="form" method="post">
+            <select name="type" class="form-select">
+                <option value="" data-displey="Select">Random type</option>
+                <option value="education">Education</option>
+                <option value="charity">Charity</option>
+                <option value="recrational">Recreational</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="busywork">Busywork</option>
+                <option value="social">Social</option>
+                <option value="diy">DIY</option>
+                <option value="music">Music</option>
+            </select>
+            <select name="participants" class="form-select">
+                <option value="">Any Number of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit" class="form-submit">Go</button>
+        </form>
+
+        <section class="section">
+            <% if (locals.data) { %>
+                <p>Activity: <%= data.activity %></p>
+                <article class="article">
+                    <h2><%= data.type %></h2>
+                    <h2>Participants: <%= data.participants %></h2>
+                </article>
+            <% } %>
+
+            <% if (locals.error) { %>
+             <div>
+                <span><%= error %></span>
+             </div>
+            <% } %>
+        </section>
+    </div>
+</body>
+</html>

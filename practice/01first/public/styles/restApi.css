@@ -1,0 +1,67 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(103, 96, 96);
+    color: rgb(66, 204, 35);
+}
+.main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 12px;
+}
+label,input{
+    margin-top: 5px;
+}
+label{
+    font-size: 22px;
+    font-weight: 600;
+}
+input{
+    border-radius: 4px;
+    font-weight: 600;
+}
+#idInput, #secretInput, #scoreInput{
+    width: 280px;
+    height: 25px;
+    border-radius: 6px;
+    color: maroon;
+}
+#get,#post,#put,#patch,#delete{
+    width: 82px;
+    padding: 8px;
+    height: 35px;
+    border-radius: 12px;
+}
+#get:hover,#post:hover,#put:hover,#patch:hover,#delete:hover{
+    cursor: pointer;
+    width: 100px;
+    padding: 8px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 6px 5px 18px 8px whitesmoke
+}
+#get{
+    background-color: blue;
+    color: white;
+}
+#put{
+    background-color: rgb(7, 195, 216);
+}
+#post{
+    background-color: rgb(221, 203, 11);
+}
+#patch{
+    background-color: rgb(231, 13, 187);
+}
+#delete{
+    background-color: red;
+    color: white;
+}

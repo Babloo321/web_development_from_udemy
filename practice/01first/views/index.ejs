@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/styles/main.css">
+</head>
+<body style="padding: 22px; background-color: lightblue; font-size: 22px; font-weight: 800;">
+    <div style="background-color: lightslategray; display: inline-block; padding: 2.5em; border-radius: 12px; padding-bottom: 1em; padding-top: 1em; margin-left: 500px; margin-top: 150px;">
+    <h1 style="color: palegreen;">Login Page</h1>
+    <form action="/submit" method="POST">
+        <label for="fname" style="font-size: 32px;">first name</label>
+        <input type="text" placeholder="first name" id="fname" name="fname" style="height: 36px; width: 244px; border-radius: 12px;"/></br></br>
+        <label for="lname" style="font-size: 32px;">last name</label>
+        <input type="text" placeholder="last name" id="lname" name="lname" style="height: 36px; width: 254px; border-radius: 12px;"/></br></br>
+        <input type="submit" value="Submit" type="button" style="background-color: blue; width: 444px; height: 43px; border-radius: 6px; font-size: 22px; color: white;"/>
+    </form>
+    <% if (locals.fname && locals.lname) { %>
+        <h2>====Your Information====</h2>
+        <h3>First Name: <%= fname %></h3>
+        <h3>Last Name: <%= lname %></h3>
+    <% } %>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position: absolute;
+    animation-name: animat;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* 
+p{
+    display: inline-block;
+    position: absolute;
+    color: maroon;
+    font-size: 2em;
+    text-shadow: 4px 4px 4px mediumslateblue;
+    animation-name: paragraph;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+/* @keyframes paragraph {
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    97%{
+        font-size: 300%;
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    to{
+        left: -30%;
+        width: 100%;
+    }
+} */
+/* box animation */
+@keyframes move {
+    from{               /*starting point*/
+        left: 0;
+    }
+    to{
+        left: 60%;      /*end point*/
+    }
+}
+
+@keyframes animat {
+    0%{
+        left: 0;
+        top: 0;
+        background-color: lightslategray;
+        rotate: 0;
+    }
+    50%{
+        left: 77%;
+        top: 0;
+        background-color: lightslategray;
+        rotate: 1440deg;
+    }
+    100%{
+        rotate: 360deg;
+        left: 77%;
+        top: 48%;
+        background-color: lightsalmon;
+    }
+}
+
+
+
+
+/* content-visibility */
+/* .container{
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    background-color: lightslategray;
+    content-visibility: visible;
+}
+.container:hover{
+    content-visibility: hidden;
+}
+.item{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 10.5%;
+    top: 12%;
+    background-color: mediumaquamarine;
+    text-align: center;
+    font-size: xx-large;
+    color: maroon;
+
+} */

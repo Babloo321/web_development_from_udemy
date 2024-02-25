@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/restApi.css">
+</head>
+<body>
+    <div class="main__container">
+
+        <div class="response-area">
+            <p><%=content%></p>
+        </div>
+
+        <div class="form">
+            <form id="myForm" action="/secret-api" method="post">
+                <label for="idInput">Id:</label><br/>
+                <input type="text" id="idInput" name="id"><br/>
+
+                <label for="secretInput">Secret:</label><br/>
+                <input type="text" id="secretInput" name="secret"><br/>
+
+                <label for="scoreInput">Score:</label><br/>
+                <input type="text" id="scoreInput" name="score"><br/><br/>
+
+                <label for="submit">Route:</label><br/>
+                <input type="submit" id="get" value="GET" formaction="/get-secret">
+                <input type="submit" id="post" value="POST" formaction="/post-secret">
+                <input type="submit" id="put" value="PUT" formaction="/put-secret">
+                <input type="submit" id="patch" value="PATCH" formaction="/patch-secret">
+                <input type="submit" id="delete" value="DELETE" formaction="/delete-secret">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
